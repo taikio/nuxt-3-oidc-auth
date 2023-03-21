@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+.nuxt
+.vscode
+api
+dist
+node_modules
+coverage
+nuxt.config.js
+**/__tests__/*.*
+oauth2.js
+services/**/index.ts

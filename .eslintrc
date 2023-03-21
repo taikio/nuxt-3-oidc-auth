@@ -1,0 +1,6 @@
+{
+	"extends": ["@nuxtjs/eslint-config-typescript", "prettier"],
+	"rules": {
+		"no-useless-constructor": "off"
+	}
+}
