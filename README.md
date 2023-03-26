@@ -1,6 +1,6 @@
 # Nuxt 3 OpenID Starter Template
 
-This template was built with Nuxt 3 (V 3.1) and has all the OpenID authentication part implemented.
+This template was built with Nuxt 3 (V 3.1) and has all the OpenID authentication flow implemented.
 
 ## Project dependencies
 
