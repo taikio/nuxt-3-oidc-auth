@@ -9,7 +9,10 @@ export default defineNuxtConfig({
 		clientRoot: process.env.CLIENT_ROOT,
 		clientScope: process.env.CLIENT_SCOPE,
 		coreUrl: process.env.CORE_URL,
-		applicationUrl: process.env.APPLICATION_URL
+		applicationUrl: process.env.APPLICATION_URL,
+		public: {
+			apiKey: process.env.API_SECRET
+		}
 	},
 	css: ['@/assets/styles/main.scss'],
 	vite: {

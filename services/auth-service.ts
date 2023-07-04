@@ -10,10 +10,11 @@ export default class AuthService {
 		this.initalizeOIDC()
 	}
 
-	private async initalizeOIDC() {
+	private initalizeOIDC() {
 		try {
-			const environment = this.webStorageService.getItem('oidc_config')
-
+			const storedConfig = this.webStorageService.getItem('oidc_config')
+			const environment = JSON.parse(storedConfig)
+			
 			const settings = {
 				authority: environment.authorityUrl,
 				client_id: environment.clientId,

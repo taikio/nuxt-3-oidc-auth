@@ -2,10 +2,12 @@ import { sendError, createError } from "h3";
 
 export default defineEventHandler((event) => {
   const authorizationHeader = getHeader(event, "authorization");
+  const config = useRuntimeConfig()
+	const apiKey = config.public.apiKey
 
   if (
     !authorizationHeader ||
-    authorizationHeader !== "c7d429c1-0a07-484b-ad8f-941df0634972"
+    authorizationHeader !== apiKey
   ) {
     return sendError(
       event,
